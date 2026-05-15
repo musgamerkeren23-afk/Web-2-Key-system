@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>H4LL0 Premium Store</title>
+
+<style>
+body {
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial;
+  padding: 20px;
+}
+
+.box {
+  background: #1c1c1c;
+  border: 1px solid red;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+a {
+  color: #ff3b3b;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+  color: lime;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💀 H4LL0 PREMIUM STORE</h1>
+
+<!-- 💰 DANA -->
+<div class="box">
+  <h2>💰 DANA PAYMENT</h2>
+  <a href="https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012092026040745504030" target="_blank">
+    Bayar via Dana
+  </a>
+</div>
+
+<!-- 🎮 ROBUX -->
+<div class="box">
+  <h2>🎮 ROBUX GAMEPASS</h2>
+  <a href="https://www.roblox.com/id/game-pass/1662154295/H4ll0-w0rld-Hub-PREMIUM" target="_blank">
+    Beli Gamepass Premium
+  </a>
+</div>
+
+<!-- 💬 DISCORD PROOF -->
+<div class="box">
+  <h2>💬 KIRIM BUKTI PEMBAYARAN</h2>
+  <p>Kirim bukti ke server Discord setelah bayar</p>
+
+  <button onclick="sendProof()">
+    Kirim ke Server
+  </button>
+</div>
+
+<!-- STATUS -->
+<div id="status"></div>
+
+<script>
+function sendProof() {
+  // ini hanya simulasi (tidak cek payment asli)
+  window.open("https://discord.gg/Z9a93NttjT", "_blank");
+
+  document.getElementById("status").innerHTML =
+    "✅ Success to Paying premium! (Proof sent to server)";
+}
+</script>
+
+</body>
+</html>
