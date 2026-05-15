@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Get Script</title>
+
+<style>
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial;
+  padding: 20px;
+}
+
+.box {
+  background: #1c1c1c;
+  border: 1px solid red;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.code {
+  background: #111;
+  border: 1px solid lime;
+  padding: 10px;
+  word-break: break-all;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💀 GET SCRIPT PAGE</h1>
+
+<!-- STEPS -->
+<div class="box">
+  <h2>📌 How to Get Script</h2>
+  <ol>
+    <li>🔓 Click “Get Script” button</li>
+    <li>📋 Copy the script</li>
+    <li>💻 Paste in your executor</li>
+    <li>🎮 Run and enjoy</li>
+  </ol>
+</div>
+
+<!-- GET SCRIPT BUTTON -->
+<div class="box">
+  <h2>🔗 Get Script</h2>
+
+  <button onclick="getScript()">Get Script 🔗</button>
+</div>
+
+<!-- SCRIPT BOX -->
+<div class="box">
+  <h2>📋 Script</h2>
+
+  <div class="code" id="scriptText">
+loadstring(game:HttpGet("https://raw.githubusercontent.com/musgamerkeren23-afk/Unkown/refs/heads/main/executorhallo.lua"))()
+  </div>
+
+  <button onclick="copyScript()">Copy Script 📋</button>
+</div>
+
+<script>
+function getScript() {
+  alert("Script ready to use!");
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+function copyScript() {
+  const text = document.getElementById("scriptText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Script copied!");
+}
+</script>
+
+</body>
+</html>
